@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      const response = await fetch('http://localhost:5173/api/hello').then(
+        (res) => res.text()
+      );
+
+      document.getElementById('response').textContent = response;
+    </script>
+
+    <h1>Welcome to App2</h1>
+    <h2>Response from App1 (Remix)</h2>
+    <pre id="response"></pre>
+  </body>
+</html>

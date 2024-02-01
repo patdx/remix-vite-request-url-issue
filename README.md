@@ -1,36 +1,7 @@
-# Welcome to Remix + Vite!
+# remix-vite-request-url-issue
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+## How to reproduce the issue:
 
-## Development
-
-Run the Vite dev server:
-
-```shellscript
-npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+1. Run `pnpm dev`. This will start app1 (remix) on port 5173 and app2 (a static web page) on port 3000.
+2. Open `http://localhost:3000` in your browser.
+3. Observe the server response.
